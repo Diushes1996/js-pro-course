@@ -1,2 +1,1 @@
-Кулинич Андрей / Kulinich Andrew
-Уебный репозиторий / Training Repository
+Кулинич Андрей, учебный репозиторий / Kulinich Andrew Training Repository

@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import {App} from './homework1/App';
 
-const element = <div>Hello</div>
+
 ReactDOM.render(
-  element,
+  <React.StrictMode>
+    
+  </React.StrictMode>,
   document.getElementById('root')
 );

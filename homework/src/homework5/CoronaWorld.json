@@ -1,0 +1,20 @@
+{
+    "world": {
+        "total_cases": "7,123,222",
+        "recovery_cases": "3,478,001",
+        "death_cases": "406,747",
+        "last_update": "Jun, 08 2020, 13:59, UTC",
+        "currently_infected": "3,238,474",
+        "cases_with_outcome": "3,884,748",
+        "mild_condition_active_cases": "3,184,566",
+        "critical_condition_active_cases": "53,908",
+        "recovered_closed_cases": "3,478,001",
+        "death_closed_cases": "406,747",
+        "closed_cases_recovered_percentage": "90.0",
+        "closed_cases_death_percentage": "10.0",
+        "active_cases_mild_percentage": "98.0",
+        "active_cases_critical_percentage": "2.0",
+        "general_death_rate": "6.0",
+        "status": "success"
+    },
+}

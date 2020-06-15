@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {App} from './homework5/App';
-//import {FriendStatus} from './test/App';
+import {App} from './redux/App';
 
 
 ReactDOM.render(

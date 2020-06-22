@@ -19,6 +19,7 @@ export const SecondComponent = ({ counter, increment, decrement, sum, hi }) => {
             </form>
             {counter}
             {hi}
+           
         </div>
     )
 }

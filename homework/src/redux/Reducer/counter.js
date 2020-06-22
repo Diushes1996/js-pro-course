@@ -12,4 +12,3 @@ export const counter = (state = initialState, action) => {
       return state;
   }
 };
-

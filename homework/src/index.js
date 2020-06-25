@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {App} from './homework5/App';
+import {App} from './Components/App';
 //import {FriendStatus} from './test/App';
 
 

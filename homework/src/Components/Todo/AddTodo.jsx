@@ -5,7 +5,7 @@ export const AddTodo = ({ addTodo }) => {
   return (
     <>
       <input value={input} onChange={(e) => setInput(e.target.value)}></input>
-      <button onClick={() => addTodo({ text: input, done: false })}>Add</button>
+      <button onClick={() => addTodo({ text: input, done: false })}>Add Todo</button>
     </>
   );
 };

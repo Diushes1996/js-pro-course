@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { addTodo, setDone, setTab } from '../../store/todosActionCreators';
-import { getTabTodos } from '../../store/todosSelectors';
+import { addTodo, setDone, setTab, deleteTodo } from '../../Store/todosActionCreators';
+import { getTabTodos } from '../../Store/todosSelectors';
 import { TodoComponent } from './TodoComponent';
 
 const mapStateToProps = (state) => ({
@@ -10,6 +10,7 @@ const mapStateToProps = (state) => ({
 
 const actionCreators = {
   addTodo,
+  deleteTodo,
   setDone,
   setTab,
 };

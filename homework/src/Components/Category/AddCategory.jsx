@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-export const AddCategory = () => {
+export const AddCategory = ({ addCategory }) => {
   const [input, setInput] = useState('');
   return (
     <>
       <input value={input} onChange={(e) => setInput(e.target.value)}></input>
-      <button>Add Category</button>
+      <button onClick={() => addCategory({ text: input})}>Add Category</button>
     </>
   );
 };

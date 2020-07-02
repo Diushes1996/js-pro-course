@@ -1,4 +1,4 @@
-import { ADD_TODO, SET_TODO_DONE, SET_TAB, DELETE_TODO } from './ActionTypes';
+import { ADD_TODO, SET_TODO_DONE, SET_TAB, DELETE_TODO } from '../ActionTypes';
 
 export const Tab = { done: '0', actual: '1' };
 

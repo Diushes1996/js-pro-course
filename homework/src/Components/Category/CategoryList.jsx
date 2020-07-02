@@ -1,10 +1,12 @@
 import React from 'react';
-import {CategoryItem} from './CategoryItem'
+import { CategoryItem } from './CategoryItem'
 
-export const CategoryList = () => {
+export const CategoryList = ({categories, deleteCategory}) => {
   return (
     <ul>
-        <CategoryItem/>
+      {categories.map(({ text, id }) => (
+        <CategoryItem key = {id} text={text} deleteCategory={() => deleteCategory(id)}/>
+        ))}
     </ul>
   );
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { TodoItem } from './TodoItem';
 
-export const TodoList = ({ todos, setDone, deleteTodo, todo }) => {
+export const TodoList = ({ todos, setDone, deleteTodo }) => {
   return (
     <ul>
       {todos.map(({ text, id, done }) => (

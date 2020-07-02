@@ -1,4 +1,4 @@
-import * as types from './ActionTypes';
+import * as types from '../ActionTypes';
 
 export const addTodo = (todo) => ({ type: types.ADD_TODO, todo });
 export const deleteTodo = (id) => ({type: types.DELETE_TODO, id})

@@ -1,10 +1,11 @@
 import React from 'react';
 
-export const CategoryItem = () => {
+export const CategoryItem = ({text, deleteCategory}) => {
     return(
         <li>
             <input type="checkbox"></input>
-            <button>X</button>
+            <button onClick={deleteCategory}>X</button>
+            <p>{text}</p>
         </li>
     )
 }

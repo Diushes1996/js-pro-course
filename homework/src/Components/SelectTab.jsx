@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tab } from '../Store/todosReducer';
+import { Tab } from '../Store/Todo/todosReducer';
 
 export const SelectTab = ({ setTab, tab }) => (
   <div onChange={(e) => setTab(e.target.value)}>

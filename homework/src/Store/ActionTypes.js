@@ -1,6 +1,8 @@
-export const ADD_TODO = 'ADD_TODO';
-export const DELETE_TODO = 'DELETE_TODO';
-export const SET_TODO_DONE = 'SET_TODO_DONE';
-export const SET_TAB = 'SET_TAB';
-export const ADD_CATEGORY = 'ADD_CATEGORY';
-export const DELETE_CATEGORY = 'DELETE_CATEGORY';
+export const ADD_TODO = "ADD_TODO";
+export const DELETE_TODO = "DELETE_TODO";
+export const SET_TODO_DONE = "SET_TODO_DONE";
+export const SET_TAB = "SET_TAB";
+export const ADD_CATEGORY = "ADD_CATEGORY";
+export const DELETE_CATEGORY = "DELETE_CATEGORY";
+export const ADD_UNDER_CATEGORY = "ADD_UNDER_CATEGORY";
+export const DELETE_UNDER_CATEGORY = "DELETE_UNDER_CATEGORY";

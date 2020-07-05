@@ -1,14 +1,20 @@
-import React from 'react';
-import { Todo } from '../pages/Todo';
-import { Provider } from 'react-redux';
-import { store } from '../Store/store';
-import { CategoryComponent } from '../pages/Category/CategoryComponent';
+import React from "react";
+import { Todo } from "../pages/Todo";
+import { Provider } from "react-redux";
+import { store } from "../Store/store";
+import { Category } from "../pages/Category";
+import { UnderCategory } from "../pages/UnderCategory";
 
 export const App = () => {
   return (
     <Provider store={store}>
-      <Todo />,
-      <CategoryComponent />
+      <div>
+        <Category />,
+        <UnderCategory />
+      </div>
+      <div>
+        <Todo />,
+      </div>
     </Provider>
   );
 };

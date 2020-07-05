@@ -1,4 +1,7 @@
-import * as types from '../ActionTypes';
+import * as types from "../ActionTypes";
 
-export const addCategory = () => ({type: types.ADD_CATEGORY, category});
-export const deleteCategory = () => ({type: types.DELETE_CATEGORY, id});
+export const addCategory = (category) => ({
+  type: types.ADD_CATEGORY,
+  category,
+});
+export const deleteCategory = (id) => ({ type: types.DELETE_CATEGORY, id });

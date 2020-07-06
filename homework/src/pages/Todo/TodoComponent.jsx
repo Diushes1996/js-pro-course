@@ -13,13 +13,10 @@ export const TodoComponent = ({
 }) => {
   return (
     <>
-      <header>To-Do List</header>
-
-      <TodoList todos={todos} setDone={setDone} deleteTodo={deleteTodo} />
-
+      <header>todo-list</header>
       <AddTodo addTodo={addTodo} />
-
       <SelectTab setTab={setTab} tab={tab} />
+      <TodoList todos={todos} setDone={setDone} deleteTodo={deleteTodo} />
     </>
   );
 };

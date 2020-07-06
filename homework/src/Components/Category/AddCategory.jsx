@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
+import Input from "@material-ui/core/Input";
 
 export const AddCategory = ({ addCategory }) => {
   const [input, setInput] = useState("");
   return (
     <>
-      <input
+      <Input
         value={input}
         placeholder={"Enter category title"}
         onChange={(e) => setInput(e.target.value)}
-      ></input>
+        color="primary"
+      ></Input>
       <Button
         onClick={() => addCategory({ text: input })}
         color="primary"

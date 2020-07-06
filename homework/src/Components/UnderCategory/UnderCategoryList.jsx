@@ -1,10 +1,10 @@
 import React from "react";
 import { UnderCategoryItem } from "./UnderCategoryItem";
 
-export const UnderCategoryList = ({ underCategories, deleteUnderCategory }) => {
+export const UnderCategoryList = ({ categories, deleteUnderCategory }) => {
   return (
     <ul>
-      {underCategories.map(({ text, id }) => (
+      {categories.map(({ text, id }) => (
         <UnderCategoryItem
           key={id}
           text={text}

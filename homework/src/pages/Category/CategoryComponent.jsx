@@ -1,20 +1,26 @@
 import React from "react";
 import { AddCategory } from "../../Components/Category/AddCategory";
 import { CategoryList } from "../../Components/Category/CategoryList";
-import { AddUnderCategory } from "../../Components/UnderCategory/AddUnderCategory";
 
 export const CategoryComponent = ({
   categories,
   addCategory,
   deleteCategory,
   addUnderCategory,
+  deleteUnderCategory,
 }) => {
   return (
     <>
       <header>Категории</header>
-      <AddCategory addCategory={addCategory} />,
-      <AddUnderCategory addUnderCategory={addUnderCategory} />,
-      <CategoryList categories={categories} deleteCategory={deleteCategory} />
+      <div className="test">
+        <AddCategory addCategory={addCategory} />
+      </div>
+      <CategoryList
+        categories={categories}
+        deleteCategory={deleteCategory}
+        addUnderCategory={addUnderCategory}
+        deleteUnderCategory={deleteUnderCategory}
+      />
     </>
   );
 };

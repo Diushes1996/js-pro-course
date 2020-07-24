@@ -1,7 +1,12 @@
 import React from "react";
 import { CategoryItem } from "./CategoryItem";
 
-export const CategoryList = ({ categories, deleteCategory }) => {
+export const CategoryList = ({
+  categories,
+  deleteCategory,
+  addUnderCategory,
+  deleteUnderCategory,
+}) => {
   return (
     <ul>
       {categories.map(({ text, id }) => (
@@ -9,6 +14,9 @@ export const CategoryList = ({ categories, deleteCategory }) => {
           key={id}
           text={text}
           deleteCategory={() => deleteCategory(id)}
+          categories={categories}
+          addUnderCategory={addUnderCategory}
+          deleteUnderCategory={deleteUnderCategory}
         />
       ))}
     </ul>

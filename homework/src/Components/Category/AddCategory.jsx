@@ -13,7 +13,10 @@ export const AddCategory = ({ addCategory }) => {
         color="primary"
       ></Input>
       <Button
-        onClick={() => addCategory({ text: input })}
+        onClick={() => {
+          addCategory({ text: input });
+          setInput("");
+        }}
         color="primary"
         variant="contained"
       >

@@ -13,11 +13,14 @@ export const AddTodo = ({ addTodo }) => {
         color="primary"
       ></Input>
       <Button
-        onClick={() => addTodo({ text: input, done: false })}
+        onClick={() => {
+          addTodo({ text: input, done: false });
+          setInput("");
+        }}
         color="primary"
         variant="contained"
       >
-        Add Todo
+        Add
       </Button>
     </>
   );

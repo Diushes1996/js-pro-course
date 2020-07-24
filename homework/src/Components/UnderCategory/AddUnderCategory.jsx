@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import Input from "@material-ui/core/Input";
+import { UnderCategoryList } from "./UnderCategoryList";
 
-export const AddUnderCategory = ({ addUnderCategory }) => {
+export const AddUnderCategory = ({
+  addUnderCategory,
+  setOpenForm,
+  setAddUnderComponent,
+  categories,
+  deleteUnderCategory,
+}) => {
   const [input, setInput] = useState("");
   return (
     <>
@@ -13,11 +20,21 @@ export const AddUnderCategory = ({ addUnderCategory }) => {
         color="primary"
       ></Input>
       <Button
-        onClick={() => addUnderCategory({ text: input })}
+        onClick={() => {
+          setAddUnderComponent(
+            <UnderCategoryList
+              categories={categories}
+              deleteUnderCategory={deleteUnderCategory}
+            />
+          );
+          addUnderCategory({ text: input });
+          setInput("");
+          setOpenForm();
+        }}
         color="primary"
         variant="contained"
       >
-        Add UnderCategory
+        Add
       </Button>
     </>
   );

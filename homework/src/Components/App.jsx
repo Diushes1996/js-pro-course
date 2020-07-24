@@ -9,10 +9,10 @@ export const App = () => {
     <Provider store={store}>
       <div className="root">
         <div className="categories">
-          <Category />,
+          <Category />
         </div>
         <div className="todos">
-          <Todo />,
+          <Todo />
         </div>
       </div>
     </Provider>

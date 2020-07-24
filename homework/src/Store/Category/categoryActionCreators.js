@@ -11,8 +11,8 @@ export const deleteCategory = (id) => ({
 });
 
 export const addUnderCategory = (underCategory) => ({
-  type: types.ADD_UNDER_CATEGORY,
-  underCategory,
+    type: types.ADD_UNDER_CATEGORY,
+    underCategory,
 });
 
 export const deleteUnderCategory = (id) => ({

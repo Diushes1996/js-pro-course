@@ -14,8 +14,10 @@ export const AddTodo = ({ addTodo }) => {
       ></Input>
       <Button
         onClick={() => {
+          if (input !== ''){
           addTodo({ text: input, done: false });
           setInput("");
+          }
         }}
         color="primary"
         variant="contained"

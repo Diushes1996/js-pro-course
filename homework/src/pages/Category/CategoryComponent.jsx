@@ -4,6 +4,7 @@ import { CategoryList } from "../../Components/Category/CategoryList";
 
 export const CategoryComponent = ({
   categories,
+  underCategories,
   addCategory,
   deleteCategory,
   addUnderCategory,
@@ -16,6 +17,7 @@ export const CategoryComponent = ({
         <AddCategory addCategory={addCategory} />
       </div>
       <CategoryList
+      underCategories={underCategories}
         categories={categories}
         deleteCategory={deleteCategory}
         addUnderCategory={addUnderCategory}

@@ -5,7 +5,7 @@ import {
   DELETE_UNDER_CATEGORY,
 } from "../ActionTypes";
 
-const initialState = { categories: [], underCategories: [] };
+const initialState = { categories: []};
 
 export const categories = (state = initialState, action) => {
   switch (action.type) {
@@ -14,31 +14,29 @@ export const categories = (state = initialState, action) => {
         ...state,
         categories: [
           ...state.categories,
-          { ...action.category, id: state.categories.length },
+          { ...action.category, categoryId: state.categories.length, underCategories: []},
         ],
       };
     case DELETE_CATEGORY:
       return {
         ...state,
         categories: state.categories.filter(
-          (category) => category.id !== action.id
+          (category) => category.categoryId !== action.categoryId
         ),
       };
     case ADD_UNDER_CATEGORY:
       return {
         ...state,
-        underCategories: [
-          ...state.underCategories,
-          { ...action.underCategory, id: state.underCategories.length },
-        ],
+        categories: state.categories.map((category) => 
+        category.categoryId !== action.categoryId ? category : {...category, underCategories: [ 
+          ...category.underCategories, {...action.underCategory, underCategoryId: category.underCategories.length, todo: []}
+        ]})
       };
-    case DELETE_UNDER_CATEGORY:
-      return {
-        ...state,
-        underCategories: state.underCategories.filter(
-          (underCategory) => underCategory.id !== action.id
-        ),
-      };
+    // case DELETE_UNDER_CATEGORY:
+    //   return {
+    //     ...state,
+    //     categories: state.category.underCategories.filter((underCategory) => underCategory.underCategoryId !== action.underCategoryId)
+    //   };
     default:
       return state;
   }

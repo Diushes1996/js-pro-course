@@ -8,6 +8,7 @@ export const AddUnderCategory = ({
   setOpenForm,
   setAddUnderComponent,
   categories,
+  underCategories,
   deleteUnderCategory,
 }) => {
   const [input, setInput] = useState("");
@@ -21,15 +22,18 @@ export const AddUnderCategory = ({
       ></Input>
       <Button
         onClick={() => {
+          if(input !== '') {
           setAddUnderComponent(
             <UnderCategoryList
               categories={categories}
+              underCategories={underCategories}
               deleteUnderCategory={deleteUnderCategory}
             />
           );
-          addUnderCategory({ text: input });
+          addUnderCategory({ underCategoryText: input });
           setInput("");
           setOpenForm();
+          }
         }}
         color="primary"
         variant="contained"

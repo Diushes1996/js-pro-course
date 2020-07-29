@@ -14,8 +14,10 @@ export const AddCategory = ({ addCategory }) => {
       ></Input>
       <Button
         onClick={() => {
-          addCategory({ text: input });
+          if(input !== '') {
+          addCategory({ categoryText: input });
           setInput("");
+          }
         }}
         color="primary"
         variant="contained"

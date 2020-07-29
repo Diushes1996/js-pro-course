@@ -9,7 +9,7 @@ import { CategoryComponent } from "./CategoryComponent";
 
 const mapStateToProps = (state) => ({
   categories: state.categories.categories,
-  underCategories: state.categories.underCategories,
+  underCategories: state.categories.underCategories
 });
 
 const actionCreators = {

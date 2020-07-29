@@ -13,7 +13,7 @@ export const TodoComponent = ({
 }) => {
   return (
     <>
-      <header>todo-list</header>
+      <header>Задачи</header>
       <AddTodo addTodo={addTodo} />
       <SelectTab setTab={setTab} tab={tab} />
       <TodoList todos={todos} setDone={setDone} deleteTodo={deleteTodo} />

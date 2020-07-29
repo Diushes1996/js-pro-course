@@ -1,16 +1,17 @@
 import React from "react";
 import { UnderCategoryItem } from "./UnderCategoryItem";
 
-export const UnderCategoryList = ({ categories, deleteUnderCategory }) => {
+export const UnderCategoryList = ({ categories, underCategories, deleteUnderCategory }) => {
   return (
+    console.log(underCategories),
     <ul>
-      {categories.map(({ text, id }) => (
+      {categories.map(({ underCategoryText, underCategoryId }) => (
         <UnderCategoryItem
-          key={id}
-          text={text}
-          deleteUnderCategory={() => deleteUnderCategory(id)}
+        key={underCategoryId}
+        underCategoryText={underCategoryText}
+        deleteUnderCategory={() => deleteUnderCategory(underCategoryId)}
         />
-      ))}
+        ))}
     </ul>
   );
 };

@@ -3,18 +3,20 @@ import { CategoryItem } from "./CategoryItem";
 
 export const CategoryList = ({
   categories,
+  underCategories,
   deleteCategory,
   addUnderCategory,
   deleteUnderCategory,
 }) => {
   return (
-    <ul>
-      {categories.map(({ text, id }) => (
+    <ul className="category-list">
+      {categories.map(({ categoryText, categoryId }) => (
         <CategoryItem
-          key={id}
-          text={text}
-          deleteCategory={() => deleteCategory(id)}
+          key={categoryId}
+          categoryText={categoryText}
+          deleteCategory={() => deleteCategory(categoryId)}
           categories={categories}
+          underCategories={underCategories}
           addUnderCategory={addUnderCategory}
           deleteUnderCategory={deleteUnderCategory}
         />
